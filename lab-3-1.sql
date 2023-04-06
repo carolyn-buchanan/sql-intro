@@ -13,5 +13,8 @@
 -- | 2019 | 30       |
 -- | 2020 | 30       |
 -- +------+----------+
-
-
+SELECT
+year
+, COUNT(name) as 'Number of Teams'
+FROM teams
+GROUP BY 1;
